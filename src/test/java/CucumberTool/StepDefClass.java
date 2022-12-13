@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-package CucumberTool;
-
-=======
 /*
 package CucumberTool;
 
 
->>>>>>> afcfc4246523e3fd6d182033b4ec10e2fd56828b
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -62,7 +57,4 @@ public class StepDefClass {
         throw new io.cucumber.java.PendingException();
     }
 }
-<<<<<<< HEAD
-=======
  */
->>>>>>> afcfc4246523e3fd6d182033b4ec10e2fd56828b
