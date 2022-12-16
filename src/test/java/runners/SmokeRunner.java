@@ -14,11 +14,15 @@ import org.junit.runner.RunWith;
         //it will quickly scan all the gherkin steps whether they are implemented or not
         //when we set dry run to false, it starts execution again
          dryRun = false,
-        tags = "@excel",
+        tags = "@tc1101",
         //to remove irrelavant information from console, you need to set monochrome to true
         monochrome = true,
         //pretty keywords prints the steps in the console to increase readability
-        plugin = {"pretty"}
+        //to generate the reports we need plugin of runner class
+
+        plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json",
+                //this failed.txt file holds all the scenarios which are failed  during execution
+        "rerun:target/failed.txt"}
 )
 
 public class SmokeRunner {
